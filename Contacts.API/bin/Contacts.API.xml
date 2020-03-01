@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Contacts.API</name>
+    </assembly>
+    <members>
+        <member name="T:Contacts.API.Controllers.ContactController">
+            <summary>
+            Contact controller class
+            </summary>
+        </member>
+        <member name="M:Contacts.API.Controllers.ContactController.Get">
+            <summary>
+            Returns the list of contacts
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Contacts.API.Controllers.ContactController.Get(System.Int32)">
+            <summary>
+            Return contact based on ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Contacts.API.Controllers.ContactController.Post(Contacts.API.Models.Contact)">
+            <summary>
+            Add new contact record
+            </summary>
+            <param name="contact"></param>
+        </member>
+        <member name="M:Contacts.API.Controllers.ContactController.Put(Contacts.API.Models.Contact)">
+            <summary>
+            Update contact record
+            </summary>
+            <param name="contact"></param>
+        </member>
+        <member name="M:Contacts.API.Controllers.ContactController.Delete(System.Int32)">
+            <summary>
+            Delete contact
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Contacts.API.Repository.Adapter.ContactAdapter.AdaptContacts(System.Collections.Generic.List{Contacts.API.Data.ContactDetail})">
+            <summary>
+            Converts ContactsDetails list object to Contact list
+            </summary>
+            <param name="contactDetailsList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Contacts.API.Repository.Adapter.ContactAdapter.AdaptContact(Contacts.API.Data.ContactDetail)">
+            <summary>
+            Converts ContactDetails object to Contact object
+            </summary>
+            <param name="contact"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
